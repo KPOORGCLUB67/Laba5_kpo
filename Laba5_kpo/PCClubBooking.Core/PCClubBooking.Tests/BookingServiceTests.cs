@@ -1,12 +1,10 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Moq;
+﻿using Moq;
 using PCClubBooking.Core.Models;
 using PCClubBooking.Core.Repositories;
 using PCClubBooking.Core.Services;
-using System;
-using System.Collections.Generic;
-using System.Timers;
-
+//хуй
+//dsadasdsada
+//пидорки
 namespace PCCClubBooking.Tests
 {
     [TestClass]
@@ -32,9 +30,7 @@ namespace PCCClubBooking.Tests
             _service = new BookingService(_mockBookings.Object, _mockPcs.Object, _tariffs);
         }
 
-        // ====================================================================
-        // ТЕСТ 1: ПОЗИТИВНЫЙ. Успешное создание бронирования
-        // ====================================================================
+
         [TestMethod]
         public void Create_ValidData_ReturnsBookingAndUpdatesPcStatus()
         {
@@ -63,9 +59,7 @@ namespace PCCClubBooking.Tests
             _mockPcs.Verify(r => r.Update(pc), Times.Once);
         }
 
-        // ====================================================================
-        // ТЕСТ 2: НЕГАТИВНЫЙ. Сломанный ПК (Исправлено на try-catch)
-        // ====================================================================
+
         [TestMethod]
         public void Create_PcIsBroken_ThrowsInvalidOperationException()
         {
@@ -86,9 +80,7 @@ namespace PCCClubBooking.Tests
             }
         }
 
-        // ====================================================================
-        // ТЕСТ 3: НЕГАТИВНЫЙ. Время занято (Исправлено на try-catch)
-        // ====================================================================
+
         [TestMethod]
         public void Create_IntervalIsBusy_ThrowsInvalidOperationException()
         {
@@ -112,9 +104,7 @@ namespace PCCClubBooking.Tests
             }
         }
 
-        // ====================================================================
-        // ТЕСТ 4: ПОЗИТИВНЫЙ. Успешная отмена
-        // ====================================================================
+
         [TestMethod]
         public void Cancel_ValidBooking_ChangesStatusToCancelled()
         {
@@ -146,9 +136,6 @@ namespace PCCClubBooking.Tests
             _mockPcs.Verify(r => r.Update(pc), Times.Once);
         }
 
-        // ====================================================================
-        // ТЕСТ 5: НЕГАТИВНЫЙ. Отмена чужой брони (Исправлено на try-catch)
-        // ====================================================================
         [TestMethod]
         public void Cancel_AnotherUsersBooking_ThrowsUnauthorizedAccessException()
         {
@@ -170,9 +157,7 @@ namespace PCCClubBooking.Tests
             }
         }
 
-        // ====================================================================
-        // ТЕСТ 6: ГРАНИЧНЫЙ. Отмена слишком поздно (Исправлено на try-catch)
-        // ====================================================================
+
         [TestMethod]
         public void Cancel_TooLate_ThrowsInvalidOperationException()
         {
