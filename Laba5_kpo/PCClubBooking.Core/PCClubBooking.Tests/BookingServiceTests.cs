@@ -7,6 +7,7 @@ using PCClubBooking.Core.Services;
 //пидорки6767
 //секс
 //членыы
+//меняем -> изменения гит( не нажимаем исправить) комитим ->отправить
 namespace PCCClubBooking.Tests
 {
     [TestClass]
