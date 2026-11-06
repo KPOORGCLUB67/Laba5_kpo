@@ -5,6 +5,7 @@ using PCClubBooking.Core.Services;
 //хуй
 //dsadasdsada
 //пидорки6767
+//секс
 namespace PCCClubBooking.Tests
 {
     [TestClass]
