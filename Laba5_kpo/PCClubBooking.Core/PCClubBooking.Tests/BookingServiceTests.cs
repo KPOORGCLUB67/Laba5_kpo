@@ -4,7 +4,7 @@ using PCClubBooking.Core.Repositories;
 using PCClubBooking.Core.Services;
 //хуй
 //dsadasdsada
-//пидорки
+//пидорки6767
 namespace PCCClubBooking.Tests
 {
     [TestClass]
