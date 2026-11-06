@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="PCClubBooking.App/PCClubBooking.App.csproj" />
+  <Project Path="PCClubBooking.Core/PCClubBooking.Core.csproj" Id="22841318-2d70-4cbc-90dc-e4d42015e5cb" />
+  <Project Path="PCClubBooking.Data/PCClubBooking.Data.csproj" />
+  <Project Path="PCClubBooking.Tests/PCClubBooking.Tests.csproj" />
+</Solution>
